@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#wrapper {
+    width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#wrapper #Csokaly_map {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(web%20components/Csokaly%20map.png);
+    background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#wrapper #Csokaly_map div {
+	width: 7vw;
+	height: 6vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#wrapper #Csokaly_map #grof {
+    background-image: url(web%20components/Location%20icons/S%C3%BCdi%20K%C3%BAria.png);
+    left: 56.5%;
+    top: 68.8%;
+}
+	#grof:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Csokaly_map #Papp_szasz {
+    left: 40%;
+    top: 20%;
+    background-image: url(web%20components/Location%20icons/Papp%20szasz.png);
+}
+
+#Papp_szasz:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Csokaly_map #Farkas {
+    background-image: url(web%20components/Location%20icons/farkas%20k.png);
+    left: 47%;
+    top: 8%;
+}
+
+#Farkas:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+#wrapper #Csokaly_map #Fenyes_elek {
+    left: 33.8%;
+    top: 20%;
+    background-image: url(web%20components/Location%20icons/F%C3%A9nyes%20elek.png);
+}
+
+#Fenyes_elek:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#back-to-map {
+	background-image: url("web components/webpage components/Property 1=Variant3.png");
+	left: 18%;
+	top: 2%;
+	display:block; width:15%; height:6%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#back-to-map:hover {
+	background-image: url("web components/webpage components/Property 1=Variant2.png");
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Bahnschrift";
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    right: 20%;
+    top: 2.5%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: #2600FF;
+    font-weight: normal;
+    text-decoration: none;
+}
+.navbar a:hover {
+	color: #00FFFF;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}

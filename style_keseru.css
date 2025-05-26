@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+    width: 1920px;
+    height: 1080px;
+	
+}
+#wrapper #Keseru_map {
+    width: 1400px;
+    height: 1080px;
+    background-image: url(web%20components/keseru%20map.png);
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wrapper #Keseru_map #kuthy {
+    width: 91px;
+    height: 85px;
+    position: absolute;
+    background-image: url(web%20components/Location%20icons/Kuthy%20h%C3%A1z.png);
+    left: 1144px;
+    top: 750px;
+    background-repeat: no-repeat;
+}
+
+#kuthy:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}

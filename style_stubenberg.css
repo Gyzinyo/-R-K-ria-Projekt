@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        
+
+#header {
+    width: 100%;
+    height: 135px;
+    background-image: url(web%20components/webpage%20components/header.png);
+    position: fixed;
+    top: 0px;
+    display: flex;
+    background-repeat: repeat-x;
+    z-index: 10;	
+}
+#header .navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a:hover {
+	transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}
+
+.back-to-map {
+	border: 2px solid white;
+	padding: 5px 15px;
+	border-radius: 20px;
+}
+.back-to-map:hover {
+	transform: scale(1.2);
+	border-radius: 20px;
+	background-color: white;
+	color: #4274E3;
+	transition: transform 0s ease;
+}
+
+#banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(web%20components/webpage%20components/banner%20stubenberg-picture.png);
+    background-repeat: no-repeat;
+	z-index: 5;
+	background-size: cover;
+	background-position: center;
+}
+#banner #title {
+    width: 40vw;
+    height: 30vw;
+    background-image: url(web%20components/webpage%20components/Stubenberg%20szoveg.png);
+   position: absolute;
+    left: 50%;
+    top: 70%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+	opacity: 0; /* Start with invisible */
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        top: 90%; /* Start 70% from the top */
+    }
+    100% {
+        opacity: 1;
+        top: 75%; /* End 50% from the top */
+    }
+}
+
+
+.container {
+	max-width: 1000px;
+    width: 75%;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 20px 0;
+    text-align: center;
+	margin-top: 20vh;
+}
+.container h1 {
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+	line-height: 1.4;
+}
+.container h2 {
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+	padding-top: 5vw;
+	line-height: 1.8;
+}
+.container .content-row {
+	padding-top: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+.container .left-column{
+	flex: 1;
+	max-width: 45%;
+}
+.container .left-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.container .right-column {
+    flex: 1;
+    max-width: 50%;
+    text-align: justify;
+    font-size: 15.6px;
+    line-height: 1.6;
+}
+.container .right-column p {
+	font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+}
+.container .content-row1 {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container .content-row1 .left-column1 {
+    flex: 1;
+    max-width: 50%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.content-row1 .left-column1 p {
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+}
+.container .content-row1 .right-column1 {
+    flex: 1;
+    max-width: 45%;
+}
+.content-row1 .right-column1 img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+#footer {
+    width: 100%;
+    height: 250px;
+    background-color: #4274E3;
+	top: 10vw;
+	position: relative;
+}
+#footer h1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+	transform: translate(-50%, -50%);
+	position: relative;
+	left: 50%;
+	top: 15%;
+}
+
+
+
+#footer #contact {
+    width: 200px;
+    height: 45px;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 50%;
+    position: relative;
+	transform: translate(-50%, -50%);
+}
+
+
+.contact-us {
+	border: 2px solid white;
+	padding: 5px 15px;
+	border-radius: 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	
+}
+.contact-us:hover {
+	border-radius: 20px;
+	background-color: white;
+	color: #4274E3;
+}
+
+#footer #contact:hover {
+    transition: transform 0.3s ease;
+}
+#footer #forrasok {
+    background-image: url(web%20components/webpage%20components/forrasok.png);
+    width: 195px;
+    height: 112px;
+	left: 2%;
+	top: 5%;
+	position: relative;
+}
+.left-column1,
+.right-column1 {
+    flex: 1;
+}
+
+.slide-from-left,
+.slide-from-right {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Slide in from LEFT ➡️ (used for first section) */
+.slide-from-left {
+    transform: translateX(-50px);
+}
+.slide-from-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide in from RIGHT ➡️ (used for second section) */
+.slide-from-right {
+    transform: translateX(50px);
+}
+.slide-from-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Optional: delay between text and image */
+.slide-from-left.in-view {
+    transition-delay: 0.2s;
+}
+.slide-from-right.in-view {
+    transition-delay: 0.2s;
+}
+
+.slide-from-left.image.in-view,
+.slide-from-right.image.in-view {
+    transition-delay: 0.6s;
+}
+.fade-in-on-scroll {
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+}
+
+.fade-in-on-scroll.in-view {
+    opacity: 1;
+}

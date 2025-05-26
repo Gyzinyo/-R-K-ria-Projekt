@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#wrapper #Szekelyhid_map {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(web%20components/Szekelyhid%20map.png);
+    background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	
+}
+#wrapper #Szekelyhid_map div {
+	width: 7vw;
+	height: 6vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#wrapper #Szekelyhid_map #muzeum {
+    background-image: url(web%20components/Location%20icons/Muzeum.png);
+    left: 37%;
+    top: 25%;
+	
+}
+
+#muzeum:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Szekelyhid_map #magtar {
+    background-image: url(web%20components/Location%20icons/magtar.png);
+    left: 50%;
+    top: 35%;
+}
+
+#magtar:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Szekelyhid_map #fogadohely {
+    background-image: url(web%20components/Location%20icons/fogadohely.png);
+    top: 40%;
+    left: 43%;
+}
+
+#fogadohely:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Szekelyhid_map #szabo_odzsa {
+    background-image: url(web%20components/Location%20icons/szinhaz.png);
+    left: 38%;
+    top: 54%;
+}
+
+#szabo_odzsa:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Szekelyhid_map #piacz_ter {
+    background-image: url(web%20components/Location%20icons/piacz.png);
+    left: 26%;
+    top: 40%;
+}
+
+#piacz_ter:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Szekelyhid_map #kozseghaza {
+    background-image: url(web%20components/Location%20icons/kozseghaza.png);
+    left: 26%;
+    top: 27%;
+}
+
+#kozseghaza:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Szekelyhid_map #stubenberg {
+    background-image: url(web%20components/Location%20icons/stubenberg%20kastely.png);
+    left: 69%;
+    top: 44%;
+}
+
+#stubenberg:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#back-to-map {
+	background-image: url("web components/webpage components/Property 1=Variant3.png");
+	left: 18%;
+	top: 2%;
+	display:block; width:15%; height:6%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#back-to-map:hover {
+	background-image: url("web components/webpage components/Property 1=Variant2.png");
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Bahnschrift";
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    right: 20%;
+    top: 2.5%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: #2600FF;
+    font-weight: normal;
+    text-decoration: none;
+}
+.navbar a:hover {
+	color: #00FFFF;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}

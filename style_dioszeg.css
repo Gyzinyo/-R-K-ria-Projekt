@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#wrapper #Dioszeg_map {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(web%20components/Dioszeg%20map.png);
+    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	
+}
+#wrapper #Dioszeg_map div {
+	width: 7vw;
+	height: 6vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#Zichy, #templom, #templom2, #profi{
+	
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+}
+#wrapper #Dioszeg_map #Zichy {
+    height: 3.5vw;
+    width: 5vh;
+    background-image: url(web%20components/Location%20icons/Zichy%20kastely.png);
+	left: 38%;
+	top: 37%;
+}
+
+#Zichy:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Dioszeg_map #templom {
+    background-image: url(web%20components/Location%20icons/dioszeg%20plebania.png);
+    width: 6vw;
+    height: 7vh;
+    left: 26%;
+    top: 49%;
+}
+#wrapper #Dioszeg_map #templom2 {
+    width: 9vw;
+    height: 4vh;
+    background-image: url(web%20components/Location%20icons/reformatus%20templom%20dioszeg.png);
+    position: absolute;
+    left: 51%;
+    top: 28%;
+}
+#wrapper #Dioszeg_map #profi {
+    width: 3vw;
+    height: 4vh;
+    background-image: url(web%20components/Location%20icons/Profi.png);
+    left: 71%;
+    top: 54%;
+}
+#back-to-map {
+	background-image: url("web components/webpage components/Property 1=Variant3.png");
+	left: 18%;
+	top: 2%;
+	display:block; width:15%; height:6%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#back-to-map:hover {
+	background-image: url("web components/webpage components/Property 1=Variant2.png");
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Bahnschrift";
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    right: 20%;
+    top: 2.5%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: #2600FF;
+    font-weight: normal;
+    text-decoration: none;
+}
+.navbar a:hover {
+	color: #00FFFF;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}

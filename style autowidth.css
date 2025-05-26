@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#wrapper #Keseru_map {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(web%20components/keseru%20map.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	
+}
+#wrapper #Keseru_map div {
+	width: 7vw;
+	height: 6vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#wrapper #Keseru_map #kuthy {
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    background-image: url(web%20components/Location%20icons/Kuthy%20h%C3%A1z.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+	left: 58.3%;
+	top: 68%;
+}
+
+#kuthy:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#back-to-map {
+	background-image: url("web components/webpage components/Property 1=Variant3.png");
+	left: 18%;
+	top: 2%;
+	display:block; width:15%; height:6%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#back-to-map:hover {
+	background-image: url("web components/webpage components/Property 1=Variant2.png");
+}
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Bahnschrift";
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    right: 20%;
+    top: 2.5%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: #2600FF;
+    font-weight: normal;
+    text-decoration: none;
+}
+.navbar a:hover {
+	color: #00FFFF;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}
