@@ -20,24 +20,26 @@ html, body{
 	background: white;
 }
 
-.wrapper #header {
-    width: 100vw;
-	height: 5vh;
-	background-color: #051029;
-	position: absolute;
-	top: 0;
+#header {
+    width: 100%;
+    height: 135px;
+    background-image: url(web%20components/webpage%20components/header.png);
+    position: fixed;
+    top: 0px;
+    display: flex;
+    background-repeat: repeat-x;
+    z-index: 10;	
 }
-
 #header .navbar {
     display: flex;
     gap: 20px;
     align-items: center;
     font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     position: absolute;
-    right: 6%;
-    top: 25%;
+    right: 3%;
+    top: 20%;
 }
 
 
@@ -59,6 +61,19 @@ html, body{
     pointer-events: none; /* Ensures it doesn't get hovered */
 }
 
+.back-to-map {
+	border: 2px solid white;
+	padding: 5px 15px;
+	border-radius: 20px;
+}
+.back-to-map:hover {
+	transform: scale(1.2);
+	border-radius: 20px;
+	background-color: white;
+	color: #4274E3;
+	transition: transform 0s ease;
+}
+
 
 /* CSS Document */
 
@@ -67,9 +82,10 @@ html, body{
     background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 90vw;
-	height: 90vh;
+	width: 100vw;
+	height: 100vh;
 	position: relative;
+	padding-top: 20vh;
 }
 
 .wrapper::before {
@@ -94,7 +110,7 @@ html, body{
 
 .wrapper #map #Bihardioszeg {
    position: absolute;
-    left: 22.5%;
+    left: 18.5%;
     top: 81%;
     width: 6vw;
     height: 5vh;
@@ -109,8 +125,8 @@ html, body{
 }
 .wrapper #map #Csokaly  {
     position: absolute;
-    left: 24%;
-    top: 71%;
+    left: 21%;
+    top: 71.5%;
     background-image: url(web%20components/Group%205.png);
     width: 6vw;
     height: 5vh;
@@ -126,7 +142,7 @@ html, body{
 
 .wrapper #map #Szekelyhid {
     position: absolute;
-    left: 27%;
+    left: 24%;
     top: 69%;
     width: 6vw;
     height: 5vh;
@@ -144,8 +160,8 @@ html, body{
     height: 20vh;
     background-image: url(web%20components/Az%20%C3%89rmell%C3%A9k.png);
     position: absolute;
-    left: 65%;
-    top: 75%;
+    left: 64%;
+    top: 78%;
     background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -169,7 +185,7 @@ html, body{
 
 .wrapper #map #Erkobolkut {
     position: absolute;
-    left: 32.5%;
+    left: 30.5%;
     top: 73.5%;
     width: 5vw;
     height: 5vh;
@@ -186,7 +202,7 @@ html, body{
 
 .wrapper #map #Nagykagya {
     position: absolute;
-    left: 26%;
+    left: 23%;
     top: 77%;
     width: 5vw;
     height: 4vh;
@@ -217,8 +233,8 @@ html, body{
 }
 .wrapper #map #Erkeseru {
     position: absolute;
-    left: 27.5%;
-    top: 51%;
+    left: 25%;
+    top: 52.5%;
     width: 6vw;
     height: 5vh;
 	background-repeat: no-repeat;
@@ -234,8 +250,8 @@ html, body{
 
 .wrapper #map #Ermihalyfalva {
     position: absolute;
-    left: 30%;
-    top: 34.5%;
+    left: 27.5%;
+    top: 35.5%;
     width: 7vw;
     height: 7vh;
 	background-repeat: no-repeat;
@@ -263,8 +279,8 @@ html, body{
 }
 .wrapper #map #Ottomany {
     position: absolute;
-    left: 38.5%;
-    top: 50%;
+    left: 36.5%;
+    top: 51.5%;
     width: 6vw;
     height: 5vh;
 	background-repeat: no-repeat;
@@ -306,11 +322,11 @@ html, body{
 }
 .wrapper #map #Magyarorszagszoveg {
     width: 20vw;
-    height: 40vh;
+    height: 30vh;
     background-image: url(web%20components/Magyarorsz%C3%A1g.png);
     position: absolute;
-    left: 1%;
-    top: 8%;
+    left: 3%;
+    top: 20%;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -326,7 +342,7 @@ html, body{
 }
 .wrapper #map #Asszonyvására {
     position: absolute;
-    left: 31%;
+    left: 29%;
     top: 64%;
     width: 6vw;
     height: 5vh;
@@ -336,10 +352,10 @@ html, body{
 }
 .wrapper #map #Ersemjen {
     position: absolute;
-    left: 28%;
-    top: 37%;
-    width: 5vw;
-    height: 5vh;
+    left: 24.5%;
+    top: 37.5%;
+    width: 6vw;
+    height: 6vh;
 	background-repeat: no-repeat;
 	background-size: contain;
     background-image: url(web%20components/Group%2056.png);
@@ -353,4 +369,47 @@ html, body{
 #Asszonyvására:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+	font-weight: bold;
+  color: #4E63AE;
+position: absolute;
+	top: 13%;
+	left: 4%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px;
+}
+
+.color1 {
+  background-color: #A6B1D6; /* top square */
+}
+
+.color2 {
+  background-color: #537E94; /* middle square */
+}
+
+.color3 {
+  background-color: #6E78A9; /* bottom square */
+}
+.color4 {
+  background-color: #E9EDF7; /* bottom square */
+}
+.color5 {
+  background-color: #FFFFFF; /* bottom square */
 }

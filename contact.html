@@ -7,95 +7,91 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .bg-left {
-      background-image: url("web components/webpage components/left side.png"); /* Adjust path if needed */
+      background-image: url("web components/webpage components/left side.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-	  
-	  #header {
-    width: 100%;
-    height: 135px;
-    background-image: url(web%20components/webpage%20components/header.png);
-    position: fixed;
-    top: 0px;
-    display: flex;
-    background-repeat: repeat-x;
-    z-index: 10;	
-}
-#header .navbar {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
-    font-size: 20px;
-    text-decoration: none;
-    position: absolute;
-    right: 3%;
-    top: 20%;
-}
 
+    #header {
+      width: 100%;
+      height: 135px;
+      background-image: url(web%20components/webpage%20components/header.png);
+      position: fixed;
+      top: 0px;
+      display: flex;
+      background-repeat: repeat-x;
+      z-index: 10;	
+    }
 
+    #header .navbar {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+      font-size: 20px;
+      text-decoration: none;
+      position: absolute;
+      right: 3%;
+      top: 20%;
+    }
 
-.navbar a {
-    tex-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-.navbar a:hover {
-	transform: scale(1.2);
-    transition: transform 0.3s ease;
-}
+    .navbar a {
+      tex-decoration: none;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-.separator {
-    color: white;
-    padding: 0 10px;
-    pointer-events: none; /* Ensures it doesn't get hovered */
-}
-	  
-	  #footer {
-    width: 100%;
-    height: 250px;
-    background-color: #4274E3;
-	top: 0vw;
-	position: relative;
-}
-#footer h1 {
-    color: #FFFFFF;
-    font-size: 20px;
-	font-weight: bold;
-    text-align: center;
-    padding-top: 50px;
-	transform: translate(-50%, -50%);
-	position: relative;
-	left: 50%;
-	top: 30%;
-}
+    .navbar a:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+    }
+
+    .separator {
+      color: white;
+      padding: 0 10px;
+      pointer-events: none;
+    }
+
+    #footer {
+      width: 100%;
+      height: 250px;
+      background-color: #4274E3;
+      top: 0vw;
+      position: relative;
+    }
+
+    #footer h1 {
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 50px;
+      transform: translate(-50%, -50%);
+      position: relative;
+      left: 50%;
+      top: 30%;
+    }
   </style>
 </head>
-	
-	<div id="header">
-	
-		<nav class="navbar">
-		
-		<a href="interactive map.html">Home</a> <span class="separator">|</span>
-		<a href="readme.html">Read me</a> <span class="separator">|</span>
-		<a href="About me.html">About me</a>
-		
-		
-		</nav>
-	
-	</div>
-	
-	
+
 <body class="font-sans">
 
-  <div class="flex min-h-screen">
-    <!-- Left Section with Background Image -->
+  <!-- Header -->
+  <div id="header">
+    <nav class="navbar">
+      <a href="interactive map.html">Home</a> <span class="separator">|</span>
+      <a href="readme.html">Read me</a> <span class="separator">|</span>
+      <a href="About me.html">About me</a>
+    </nav>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="flex min-h-screen pt-[0px]">
+    <!-- Left Section -->
     <div class="w-1/2 bg-left text-white p-16 flex flex-col justify-center">
       <h2 class="text-3xl font-semibold mb-10">Contact Information</h2>
-
       <div class="flex items-center mb-6">
         <span class="mr-4">📞</span>
         <p class="text-lg">+40 743 482 208</p>
@@ -112,18 +108,18 @@
 
     <!-- Right Section (Form) -->
     <div class="w-1/2 bg-white p-20 flex flex-col justify-center">
-      <form class="space-y-10 text-black" style="width: 100%;">
+      <form action="https://formspree.io/f/mblonjyl" method="POST" class="space-y-10 text-black" style="width: 100%;">
         <div>
           <label class="block text-base font-medium mb-1">Teljes Név</label>
-          <input type="text" class="w-full border-b-2 border-gray-400 focus:outline-none focus:border-[#013047] bg-transparent py-1" placeholder="írd be a neved" />
+          <input name="name" type="text" required class="w-full border-b-2 border-gray-400 focus:outline-none focus:border-[#013047] bg-transparent py-1" placeholder="írd be a neved" />
         </div>
         <div>
           <label class="block text-base font-medium mb-1">Email cím</label>
-          <input type="email" class="w-full border-b-2 border-gray-400 focus:outline-none focus:border-[#013047] bg-transparent py-1" placeholder="you@example.com" />
+          <input name="email" type="email" required class="w-full border-b-2 border-gray-400 focus:outline-none focus:border-[#013047] bg-transparent py-1" placeholder="you@example.com" />
         </div>
         <div>
           <label class="block text-base font-medium mb-1">Vélemény</label>
-          <textarea class="w-full mt-2 p-3 h-56 rounded bg-gray-100 border border-gray-300 resize-none focus:outline-none" placeholder="írd meg a véleményed..."></textarea>
+          <textarea name="message" required class="w-full mt-2 p-3 h-56 rounded bg-gray-100 border border-gray-300 resize-none focus:outline-none" placeholder="írd meg a véleményed..."></textarea>
         </div>
         <div class="text-right">
           <button type="submit" class="px-8 py-3 bg-[#013047] text-white rounded-md hover:bg-[#014a6d]">
@@ -133,14 +129,11 @@
       </form>
     </div>
   </div>
-	
-	<div id="footer">
-	
-		<h1>Figyelem, amíg a weboldal nincs hivatalosan fent az interenten, ez az oldal nem működik!</h1>
-	
-	
-	
-	</div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <h1>Figyelem, amíg a weboldal nincs hivatalosan fent az interneten, ez az oldal nem működik!</h1>
+  </div>
 
 </body>
 </html>
