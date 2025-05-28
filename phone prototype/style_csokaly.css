@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#wrapper {
+    width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#wrapper #Csokaly_map {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("components/Csokaly map.png");
+    background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#wrapper #Csokaly_map div {
+	width: 7vw;
+	height: 6vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#wrapper #Csokaly_map #grof {
+    background-image: url("components/Locations/Südi Kúria.png");
+    left: 58.5%;
+    top: 59%;
+}
+	#grof:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Csokaly_map #Papp_szasz {
+    left: 37%;
+    top: 33.5%;
+    background-image: url("components/Locations/Papp szasz.png");
+}
+
+#Papp_szasz:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#wrapper #Csokaly_map #Farkas {
+    background-image: url("components/Locations/farkas k.png");
+    left: 45%;
+    top: 25%;
+}
+
+#Farkas:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+#wrapper #Csokaly_map #Fenyes_elek {
+    left: 25%;
+    top: 32%;
+    background-image: url("components/Locations/Fényes elek.png");
+}
+
+#Fenyes_elek:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#back-to-map {
+	background-image: url("web components/webpage components/Property 1=Variant3.png");
+	left: 18%;
+	top: 2%;
+	display:block; width:15%; height:6%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#back-to-map:hover {
+	background-image: url("web components/webpage components/Property 1=Variant2.png");
+}
+
+#header {
+    width: 100%;
+    height: 135px;
+    background-image: url("components/Ér/header.png");
+    position: fixed;
+    top: 0px;
+    display: flex;
+    background-repeat: repeat-x;
+    z-index: 10;	
+}
+#header .navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a:hover {
+	transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}
+
+.back-to-map {
+	border: 2px solid white;
+	padding: 5px 15px;
+	border-radius: 20px;
+}
+.back-to-map:hover {
+	transform: scale(1.2);
+	border-radius: 20px;
+	background-color: white;
+	color: #4274E3;
+	transition: transform 0s ease;
+}

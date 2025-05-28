@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #E9EDF7;
+}
+.wrapper {
+   width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+
+#header {
+    width: 100%;
+    height: 135px;
+    background-image: url("components/Ér/header.png");
+    position: fixed;
+    top: 0px;
+    display: flex;
+    background-repeat: repeat-x;
+    z-index: 10;	
+}
+#header .navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+
+
+.navbar a {
+    tex-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a:hover {
+	transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.separator {
+    color: white;
+    padding: 0 10px;
+    pointer-events: none; /* Ensures it doesn't get hovered */
+}
+
+.back-to-map {
+	border: 2px solid white;
+	padding: 5px 15px;
+	border-radius: 20px;
+}
+.back-to-map:hover {
+	transform: scale(1.2);
+	border-radius: 20px;
+	background-color: white;
+	color: #4274E3;
+	transition: transform 0s ease;
+}
+
+
+/* CSS Document */
+
+.wrapper #map {
+    background-image: url("components/Ér/Android Ér.png");
+    background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	padding-top: 20vh;
+}
+
+.wrapper::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 25vw;
+	height: 100%;
+	background-color: #E9EDF7;
+	
+}
+
+.wrapper::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 25vw;
+	height: 100%;
+	background-color: #FFFFFF;
+	z-index: -1;
+}
+
+.wrapper #map #Bihardioszeg {
+   position: absolute;
+    left: 21%;
+    top: 63.5%;
+    width: 6vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 1.png"); 
+}
+
+#Bihardioszeg:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Csokaly  {
+    position: absolute;
+    left: 23%;
+    top: 59.5%;
+    background-image: url("components/Ér/Group 5.png");
+    width: 6vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#Csokaly:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
+.wrapper #map #Szekelyhid {
+    position: absolute;
+    left: 26.7%;
+    top: 58.5%;
+    width: 6vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 6.png");
+}
+
+#Szekelyhid:hover {
+	transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Azermellek {
+    width: 30vw;
+    height: 20vh;
+    background-image: url(web%20components/Az%20%C3%89rmell%C3%A9k.png);
+    position: absolute;
+    left: 64%;
+    top: 78%;
+    background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+.wrapper #map #Hegykozszentmiklos {
+     position: absolute;
+    left: 31.5%;
+    top: 78%;
+    width: 5vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url(web%20components/Group%203.png);
+}
+
+#Hegykozszentmiklos:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.wrapper #map #Erkobolkut {
+    position: absolute;
+    left: 33.5%;
+    top: 60.5%;
+    width: 5vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 4.png");
+    
+}
+
+#Erkobolkut:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.wrapper #map #Nagykagya {
+    position: absolute;
+    left: 25%;
+    top: 61.7%;
+    width: 5vw;
+    height: 4vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 2.png");
+    
+}
+
+#Nagykagya:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.wrapper #map #Kiskereki {
+    width: 131px;
+    height: 48px;
+    background-image: url(web%20components/Group%208.png);
+    position: absolute;
+    top: 712px;
+    left: 505px;
+    background-repeat: no-repeat;
+}
+
+#Kiskereki:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Erkeseru {
+    position: absolute;
+    left: 27%;
+    top: 51%;
+    width: 6vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 9.png");
+    
+}
+
+#Erkeseru:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.wrapper #map #Ermihalyfalva {
+    position: absolute;
+    left: 30.5%;
+    top: 44%;
+    width: 7vw;
+    height: 7vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 13.png");
+}
+
+#Ermihalyfalva:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Ertarcsa {
+    width: 130px;
+    height: 50px;
+    background-image: url(web%20components/Group%2012.png);
+    position: absolute;
+    left: 580px;
+    top: 525px;
+    background-repeat: no-repeat;
+}
+
+#Ertarcsa:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Ottomany {
+    position: absolute;
+    left: 41.5%;
+    top: 50.3%;
+    width: 6vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 10.png");
+}
+
+#Ottomany:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Szalacs {
+    width: 130px;
+    height: 51px;
+    position: absolute;
+    left: 817px;
+    top: 541px;
+}
+
+#Szalacs:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
+.wrapper #map #Erolaszi {
+    width: 131px;
+    height: 49px;
+    position: absolute;
+    left: 586px;
+    top: 802px;
+    background-image: url(web%20components/Group%207.png);
+    background-repeat: no-repeat;
+}
+
+#Erolaszi:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.wrapper #map #Magyarorszagszoveg {
+    width: 20vw;
+    height: 30vh;
+    background-image: url(web%20components/Magyarorsz%C3%A1g.png);
+    position: absolute;
+    left: 3%;
+    top: 20%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.wrapper #footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #0E1329;
+    position: absolute;
+    bottom: 0;
+}
+.wrapper #map #Asszonyvására {
+    position: absolute;
+    left: 33%;
+    top: 55%;
+    width: 6vw;
+    height: 5vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 55.png");
+}
+.wrapper #map #Ersemjen {
+    position: absolute;
+    left: 27.5%;
+    top: 45%;
+    width: 6vw;
+    height: 6vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-image: url("components/Ér/Group 56.png");
+}
+
+#Ersemjen:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+#Asszonyvására:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+	font-weight: bold;
+  color: #4E63AE;
+position: absolute;
+	top: 13%;
+	left: 4%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px;
+}
+
+.color1 {
+  background-color: #A6B1D6; /* top square */
+}
+
+.color2 {
+  background-color: #537E94; /* middle square */
+}
+
+.color3 {
+  background-color: #6E78A9; /* bottom square */
+}
+.color4 {
+  background-color: #E9EDF7; /* bottom square */
+}
+.color5 {
+  background-color: #FFFFFF; /* bottom square */
+}
